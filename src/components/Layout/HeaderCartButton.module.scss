@@ -1,0 +1,62 @@
+@import '../../utils';
+
+.cart {
+    &-button {
+        border-radius: 2rem;
+        background: $secondary-color;
+        color: #fff;
+        padding: 0.25em 1em;
+
+        & > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+
+            * {
+                margin: 0 0.2rem;
+                padding: 0.25rem;
+
+                &:first-child {
+                    padding: 0;
+                }
+            }
+
+            .label,
+            .items-count {
+                font-size: 1.15rem;
+            }
+
+            .items-count {
+                background: $primary-color;
+                width: 2.5rem;
+                height: 2rem;
+                border-radius: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.bump {
+    animation: bump 300ms ease-in-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

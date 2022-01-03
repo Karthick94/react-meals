@@ -1,0 +1,9 @@
+@import '../../utils';
+
+.available {
+    &-meals {
+        position: relative;
+        padding: 1rem 0;
+        top: 55vh;
+    }
+}

@@ -1,0 +1,33 @@
+.backdrop {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 2;
+    background-color: #000;
+}
+
+.model-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 3;
+    width: 40%;
+    height: max-content;
+
+    .content {
+        background-color: #fff;
+        border-radius: 1rem;
+        width: 100%;
+    }
+}

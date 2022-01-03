@@ -1,0 +1,57 @@
+@import '../../utils';
+
+.cart {
+    color: #333;
+    max-height: 38rem;
+    padding: 1rem 2rem;
+    overflow-y: auto;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: end;
+        padding: 1rem 0;
+
+        * {
+            padding: 0.75rem 1.75rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        button:first-child {
+            border: 2px solid $primary-color;
+            color: $primary-color;
+            margin-right: 2rem;
+
+            &:hover {
+                background: $primary-color;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        button:last-child {
+            // border: 2px solid $primary-color;
+            color: #fff;
+            background-color: $primary-color;
+            border: 2px solid $primary-color;
+
+            &:hover {
+                background: #fff;
+                color: $primary-color;
+                border: 2px solid $primary-color;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
